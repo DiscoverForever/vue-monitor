@@ -36,6 +36,6 @@ echo "git push"
 git push
 echo "生成发布tag $tag_name"
 git tag "$tag_name"
-echo "推送tag $tag_name到远程仓库"
+echo "推送tag $tag_name 到远程仓库"
 git push origin $tag_name
 exit
