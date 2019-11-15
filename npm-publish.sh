@@ -23,5 +23,12 @@ echo "-------\033[36mpublishing\033[0m-------"
 
 npm publish # 发布
 
-echo "\033[36m 完成 \033[0m"
+echo "\033[36m 发布完成 \033[0m"
+
+time = $(date "+%Y%m%d%H%M%S")
+tag_name = "$time-v$version"
+echo "生成发布tag $tag_name"
+git tag "$tag_name"
+echo
+git push origin "tag_name"
 exit
