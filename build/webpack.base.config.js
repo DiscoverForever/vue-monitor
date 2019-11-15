@@ -5,7 +5,10 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'monitor.min.js',
-    path: path.resolve(__dirname, '../lib')
+    path: path.resolve(__dirname, '../lib'),
+    library: 'Monitor',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
