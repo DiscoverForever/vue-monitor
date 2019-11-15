@@ -5,8 +5,7 @@
   "main": "lib/monitor.min.js",
   "scripts": {
     "test": "test",
-    "build": "webpack --config build/webpack.prod.config.js",
-    "publish": "npm run build"
+    "build": "webpack --config build/webpack.prod.config.js"
   },
   "keywords": [
     "vue",
