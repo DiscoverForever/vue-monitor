@@ -1,6 +1,6 @@
 {
   "name": "vue-monitor",
-  "version": "1.0.3",
+  "version": ".0.4",
   "description": "Vue埋点监控SDK",
   "main": "lib/monitor.min.js",
   "scripts": {
