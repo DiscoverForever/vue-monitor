@@ -1,0 +1,28 @@
+{
+  "name": "vue-monitor",
+  "version": "1.0.0",
+  "description": "Vue埋点监控SDK",
+  "main": "lib/monitor.min.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack --config build/webpack.prod.config.js",
+    "publish": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "monitor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiscoverForever/vue-monitor.git"
+  },
+  "author": "tangyuxiaobao",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
