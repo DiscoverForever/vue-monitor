@@ -1,10 +1,6 @@
-const path = require('path');
+const Merge = require('webpack-merge')
+const BaseConfig = require('./webpack.base.config')
 
-module.exports = {
-  mode: 'production',
-  entry: './src/index.js',
-  output: {
-    filename: 'monitor.min.js',
-    path: path.resolve(__dirname, '../lib')
-  }
-}
+module.exports = Merge(BaseConfig, {
+  mode: 'production'
+})
