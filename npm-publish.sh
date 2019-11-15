@@ -25,10 +25,17 @@ npm publish # 发布
 
 echo "\033[36m 发布完成 \033[0m"
 
-time = $(date "+%Y%m%d%H%M%S")
-tag_name = "$time-v$version"
+time=$(date "+%Y%m%d%H%M%S")
+tag_name="$time-v$version"
+
+echo "git add package.json"
+git add package.json
+echo "git commit -m Mod update version $version"
+git commit -m "Mod update version $version"
+echo "git push"
+git push
 echo "生成发布tag $tag_name"
 git tag "$tag_name"
-echo
-git push origin "tag_name"
+echo "推送tag $tag_name到远程仓库"
+git push origin $tag_name
 exit
